@@ -1,0 +1,29 @@
+body {
+  padding-top: 70px;
+}
+#container {
+  padding: 39px 0px;
+}
+.single-food-img {
+  width: 100%; 
+}
+.thumb-big
+{
+  height: 199px;
+}
+.food-list
+{
+  text-align: center;
+}
+.availability
+{
+  padding: 9px;
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
+}
+.purchaseThumb
+{
+  height: 149px;
+  padding-right: 21px;
+}

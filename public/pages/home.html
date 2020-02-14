@@ -1,0 +1,26 @@
+<!-- home.html used to view the all fast food items -->
+<h2>Onle Fast Food Store</h2>
+<!-- search option is used to search the fast food items by names -->
+<input type="text" placeholder='Search Using name' class="form-control" data-ng-model="search">
+ 
+<div class="row food-list">
+  <div class="col-md-4" data-ng-repeat="foodItem in foodItems | orderBy:'name' | filter:search">
+    <!-- display the fast food name using search filter -->
+    <h2>{{foodItem.Title | uppercase}}</h2>
+    <p>
+      <!-- display the fast food picture -->
+      <img data-ng-src="{{foodItem.URL}}" class="thumb-big">
+    </p>
+    <p>
+      <!-- display the food overview -->
+      {{foodItem.Description | limitTo:100}}...</p>
+    <p>
+      <!-- display the Price -->
+      <h4>{{foodItem.Price}} LKR</h4>
+      <!-- MoreInfo link is used to redirect the page to /foodItem/{{foodItem.id}} -->
+      <a ng-href="/foodItem/{{foodItem.ItemID}}" class="btn btn-primary">More Info</a>
+    </p>
+  </div>
+</div>
+
+

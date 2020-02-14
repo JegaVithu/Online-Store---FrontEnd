@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- ng-app directive defines an AngularJS application -->
+<html data-ng-app="FastFoodApp">
+<head>
+  <title>But Fast Food Online</title>
+  <!-- Import the style sheet files -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="css/myApp.css">
+  <!-- specifies the base URL/target -->
+  <base href="/home" />
+</head>
+<!-- ng-controller directive adds a controller to application -->
+<body class="container" data-ng-controller="fastFoodController">
+  <!-- ng-include directive includes HTML from an external file -->
+  <div data-ng-include src="headerSrc"></div>
+  <!-- supports Single Page Application via multiple views on a single page -->
+  <div data-ng-view=""></div>
+  <!-- Import the javascript files -->
+  <script type="text/javascript" src="js/library/jquery.min.js"></script>
+  <script type="text/javascript" src="js/library/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/library/angular.min.js"></script>
+  <script type="text/javascript" src="js/library/angular-route.min.js"></script>
+  <script type="text/javascript" src="js/library/angular-resource.min.js"></script>
+  <script type="text/javascript" src="js/controller/myApp.js"></script>
+  <script type="text/javascript" src="js/router/router.js"></script>
+  <script type="text/javascript" src="js/service/service.js"></script>
+</body>
+</html>

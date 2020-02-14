@@ -1,0 +1,23 @@
+<!-- foodView.html is used to view more information about the selected food item -->
+<!-- when click the Back link, back() function is called -->
+<a ng-click="back()" class="btn btn-info" href="javascript:">« Back</a>
+
+<!-- ng-show used to show the element -->
+<div ng-show="selectedFoodItem">
+  <!-- display the name of the selected food item -->
+  <h3>{{selectedFoodItem.Title}}</h3>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <!-- display the image of the selected food item -->
+        <img class="single-food-img" data-ng-src="{{selectedFoodItem.URL}}">
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-8">
+        <!-- display the overview of the food item -->
+        <h3>Overview</h3>
+        <p align="justify">{{selectedFoodItem.Description}}</p>
+        <p> </p>
+        <!-- display the price of the selected food item -->
+        <h3><b>Price: </b>{{selectedFoodItem.Price}}</h3>
+    </div>
+  </div>
+</div>
